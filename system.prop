@@ -1,3 +1,166 @@
 #
-# system.prop for u8860
+# system.prop for surf
 #
+
+#DTS2012021302920 yanzhennan 20120213 begin
+rild.libpath=/system/lib/libril-qc-1.so
+#DTS2012021302920 yanzhennan 20120213 end
+rild.libargs=-d /dev/smd0
+persist.rild.nitz_plmn=
+persist.rild.nitz_long_ons_0=
+persist.rild.nitz_long_ons_1=
+persist.rild.nitz_long_ons_2=
+persist.rild.nitz_long_ons_3=
+persist.rild.nitz_short_ons_0=
+persist.rild.nitz_short_ons_1=
+persist.rild.nitz_short_ons_2=
+persist.rild.nitz_short_ons_3=
+#/*< DTS2012011906026 chendeng 20120120 begin */
+#/*Support ICS double sdcard. The value may be external_sd or internal_sd*/
+persist.sys.main_storage=internal_sd
+#/*DTS2012011906026 chendeng 20120120 end >*/
+ril.subscription.types=NV,RUIM
+DEVICE_PROVISIONED=1
+debug.sf.hw=1
+dalvik.vm.heapsize=24m
+dev.pm.dyn_samplingrate=1
+
+#
+# system props for the cne module
+#
+persist.cne.UseCne=vendor
+persist.cne.UseSwim=false
+persist.cne.bat.range.low.med=30
+persist.cne.bat.range.med.high=60
+persist.cne.loc.policy.op=/system/etc/OperatorPolicy.xml
+persist.cne.loc.policy.user=/system/etc/UserPolicy.xml
+persist.cne.bwbased.rat.sel=false
+persist.cne.snsr.based.rat.mgt=false
+persist.cne.bat.based.rat.mgt=false
+persist.cne.rat.acq.time.out=30000
+persist.cne.rat.acq.retry.tout=0
+#begin by liutie
+persist.sys.strictmode.visual=false
+#end by liutie
+persist.cne.sync.swim.mode=false
+
+#
+# DTS2011122305732 liutie 20111226 begin
+persist.sys.strictmode.disable=true
+# DTS2011122305732 liutie 20111226 end
+# /* < DTS2012030300475 duhongyan 20120303 begin */
+lpa.decode=false
+# /* DTS2012030300475 duhongyan 20120303 end > */
+ro.hdmi.enable=true
+
+#
+# system props for the data modules
+#
+ro.use_data_netmgrd=true
+
+#
+# system props for SD card emulation of emmc partition
+#
+ro.emmc.sdcard.partition=16
+
+#
+# system props for telephony modules
+#
+#device supports EHRPD
+ro.config.ehrpd=true
+
+#
+# system props for the MM modules
+#
+media.stagefright.enable-player=true
+media.stagefright.enable-meta=false
+media.stagefright.enable-scan=true
+media.stagefright.enable-http=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-qcp=true
+lpa.use-stagefright=true
+
+#
+# system prop for opengles version
+#
+ro.opengles.version=131072
+
+#/* < DTS2012011902218 zhuwenying 20120119 begin */
+#
+# system prop for wlan Networking
+#
+wifi.interface=eth0
+#/* DTS2012011902218 zhuwenying 20120119 end > */
+
+#
+# system prop for Bluetooth Dialup Networking
+#
+ro.qualcomm.bluetooth.dun=true
+
+#
+# system prop for Bluetooth Auto connect for remote initated connections
+#
+ro.bluetooth.remote.autoconnect=true
+
+#
+# System prop to disable strict mode flash on display
+#
+persist.sys.strictmode.visual=false
+#/*<DTS2011122402305 z00107904 20111222 begin*/
+# DTS2011012104419 s62695 for quick power on begin
+ro.config.hw_quickpoweron=true
+persist.sys.quickpoweron=normal
+persist.sys.animationstart=false
+ro.config.hw_poanimation=5000
+# DTS2011012104419 s62695 for quick power on end
+#/*DTS2011122402305 z00107904 20111222 end>*/
+#
+# system prop for multi rild (DSDS case)
+#
+ro.multi.rild=false
+
+#
+# system prop for Bluetooth FTP profile
+#
+ro.qualcomm.bluetooth.ftp=true
+#
+# system property for Bluetooth discoverability time out in seconds
+# 0: Always discoverable
+#debug.bt.discoverable_time=0
+
+#
+# system prop for requesting Master role in incoming Bluetooth connection.
+#
+ro.bluetooth.request.master=true
+
+#
+# system property to enforce Phone Mode view
+#
+ro.screen.layout=normal
+
+#
+#System prop for disabling the meta data mode for encoder
+#
+debug.camcorder.disablemeta=0
+
+#
+# Simulate sdcard on /data/media
+#
+persist.fuse_sdcard=false
+# Turn off tiled rendering
+#
+debug.enabletr=false
+
+#
+# System prop for using landscape preview layout in camera
+#
+debug.camera.landscape=true
+
+#
+# System prop for capping scroll velocity
+#
+ro.max.fling_velocity=4000
+
+#libeibei modify 
+ro.emmc=1

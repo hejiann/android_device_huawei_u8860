@@ -30,3 +30,8 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_RECOVERY_FSTAB := device/huawei/u8860/recovery/recovery.fstab
 TARGET_RECOVERY_INITRC := device/huawei/u8860/recovery/init.rc
 
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.secure=0 \
+    ro.allow.mock.location=1 \
+    ro.debuggable=1
+
