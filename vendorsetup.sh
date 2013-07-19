@@ -1,1 +1,1 @@
-add_lunch_combo cm_u8860-eng
+add_lunch_combo cm_u8860-userdebug
