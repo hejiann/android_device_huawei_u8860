@@ -41,6 +41,28 @@ PRODUCT_COPY_FILES += \
     device/huawei/u8860/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
     device/huawei/u8860/firmware/yamato_pm4.fw:system/etc/firmware/yamato_pm4.fw
 
+# permissions
+PRODUCT_COPY_FILES += \
+    device/huawei/u8860/permissions/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml \
+    device/huawei/u8860/permissions/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
+    device/huawei/u8860/permissions/android.hardware.camera.xml:system/etc/permissions/android.hardware.camera.xml \
+    device/huawei/u8860/permissions/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
+    device/huawei/u8860/permissions/android.hardware.location.xml:system/etc/permissions/android.hardware.location.xml \
+    device/huawei/u8860/permissions/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
+    device/huawei/u8860/permissions/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml \
+    device/huawei/u8860/permissions/android.hardware.sensor.gyroscope.xml:system/etc/permissions/android.hardware.sensor.gyroscope.xml \
+    device/huawei/u8860/permissions/android.hardware.sensor.light.xml:system/etc/permissions/android.hardware.sensor.light.xml \
+    device/huawei/u8860/permissions/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
+    device/huawei/u8860/permissions/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
+    device/huawei/u8860/permissions/android.hardware.touchscreen.multitouch.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.xml \
+    device/huawei/u8860/permissions/android.hardware.touchscreen.xml:system/etc/permissions/android.hardware.touchscreen.xml \
+    device/huawei/u8860/permissions/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
+    device/huawei/u8860/permissions/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
+    device/huawei/u8860/permissions/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
+
+# etc
+PRODUCT_COPY_FILES += \
+
 $(call inherit-product, build/target/product/full.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
